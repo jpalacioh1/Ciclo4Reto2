@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>Reto2_Web</groupId>
-	<artifactId>Reto2_Web</artifactId>
+	<artifactId>Reto3_Web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Reto2_Web</name>
+	<name>Reto3_Web</name>
 	<description>Reto2_Web</description>
 	<properties>
 		<java.version>11</java.version>

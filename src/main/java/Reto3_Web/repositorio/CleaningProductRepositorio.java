@@ -1,11 +1,11 @@
-package Reto2_Web.repositorio;
+package Reto3_Web.repositorio;
 
-import Reto2_Web.modelo.CleaningProduct;
+import Reto3_Web.modelo.CleaningProduct;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import Reto2_Web.interfaces.InterfaceCleaningProduct;
+import Reto3_Web.interfaces.InterfaceCleaningProduct;
 
 @Repository
 public class CleaningProductRepositorio {

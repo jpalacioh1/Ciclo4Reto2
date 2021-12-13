@@ -1,7 +1,7 @@
-package Reto2_Web.repositorio;
+package Reto3_Web.repositorio;
 
-import Reto2_Web.interfaces.InterfaceUser;
-import Reto2_Web.modelo.User;
+import Reto3_Web.interfaces.InterfaceUser;
+import Reto3_Web.modelo.User;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package Reto2_Web.modelo;
+package Reto3_Web.modelo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

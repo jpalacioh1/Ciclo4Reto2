@@ -1,6 +1,6 @@
-package Reto2_Web.interfaces;
+package Reto3_Web.interfaces;
 
-import Reto2_Web.modelo.User;
+import Reto3_Web.modelo.User;
 import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
 

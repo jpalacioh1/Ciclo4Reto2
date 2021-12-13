@@ -1,7 +1,7 @@
-package Reto2_Web.servicio;
+package Reto3_Web.servicio;
 
-import Reto2_Web.modelo.User;
-import Reto2_Web.repositorio.UserRepositorio;
+import Reto3_Web.modelo.User;
+import Reto3_Web.repositorio.UserRepositorio;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +48,15 @@ public class UserService {
                 if (user.getName() != null) {
                     userDb.get().setName(user.getName());
                 }
+                
+                if (user.getBirthtDay() != null) {
+                    userDb.get().setBirthtDay(user.getBirthtDay());
+                }
+                
+                 if (user.getMonthBirthtDay() != null) {
+                    userDb.get().setMonthBirthtDay(user.getMonthBirthtDay());
+                }
+                 
                 if (user.getAddress() != null) {
                     userDb.get().setAddress(user.getAddress());
                 }

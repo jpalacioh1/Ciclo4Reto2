@@ -1,7 +1,7 @@
-package Reto2_Web.controlador;
+package Reto3_Web.controlador;
 
-import Reto2_Web.modelo.User;
-import Reto2_Web.servicio.UserService;
+import Reto3_Web.modelo.User;
+import Reto3_Web.servicio.UserService;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

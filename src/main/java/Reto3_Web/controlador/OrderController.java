@@ -1,7 +1,7 @@
-package Reto2_Web.controlador;
+package Reto3_Web.controlador;
 
-import Reto2_Web.modelo.CleaningProduct;
-import Reto2_Web.servicio.CleaningProductService;
+import Reto3_Web.modelo.Order;
+import Reto3_Web.servicio.OrderService;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,39 +18,42 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/cleaningprod")
+@RequestMapping("api/order")
 @CrossOrigin("*")
-public class CleaningProductController {
-
+public class OrderController {
     @Autowired
-    private CleaningProductService accessoryService;
-
+    private OrderService orderService;
+    
     @GetMapping("/all")
-    public List<CleaningProduct> getAll() {
-        return accessoryService.getAll();
+    public List<Order> getAll() {
+        return orderService.getAll();
     }
-
+    
     @GetMapping("/{id}")
-    public Optional<CleaningProduct> getClothe(@PathVariable("id") Integer id) {
-        return accessoryService.getClothe(id);
+    public Optional<Order> getOrder(@PathVariable("id") Integer id) {
+        return orderService.getOrder(id);
     }
-
+    
     @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
-    public CleaningProduct create(@RequestBody CleaningProduct gadget) {
-        return accessoryService.create(gadget);
+    public Order create(@RequestBody Order order) {
+        return orderService.create(order);
     }
-
+    
     @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
-    public CleaningProduct update(@RequestBody CleaningProduct gadget) {
-        return accessoryService.update(gadget);
+    public Order update(@RequestBody Order order) {
+        return orderService.update(order);
     }
-
+    
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") Integer id) {
-        return accessoryService.delete(id);
+        return orderService.delete(id);
     }
-
+    
+    @GetMapping("/zona/{zone}")
+    public List<Order> getOrdersByZone(@PathVariable("zone") String zone){
+        return orderService.getOrderByZone(zone);
+    }
 }
